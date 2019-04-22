@@ -1,0 +1,297 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	color: #000;
+	overflow-x: hidden;
+}
+
+div, p, input, button, form, span, a, ul, li{
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6{
+	margin: 0;
+	font-family: Ubuntu, sans-serif;
+	font-weight: 700;
+}
+
+p{
+	line-height: 1.6em;
+}
+
+ul, li{
+	list-style-type: none;
+	padding: 0;
+}
+
+.container{
+	width: 1170px;
+	margin: 0 auto;
+}
+
+.header{
+	background: rgba(78,189,254,1);
+	background: -moz-linear-gradient(-45deg, rgba(78,189,254,1) 0%, rgba(55,144,217,1) 100%);
+	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(78,189,254,1)), color-stop(100%, rgba(55,144,217,1)));
+	background: -webkit-linear-gradient(-45deg, rgba(78,189,254,1) 0%, rgba(55,144,217,1) 100%);
+	background: -o-linear-gradient(-45deg, rgba(78,189,254,1) 0%, rgba(55,144,217,1) 100%);
+	background: -ms-linear-gradient(-45deg, rgba(78,189,254,1) 0%, rgba(55,144,217,1) 100%);
+	background: linear-gradient(135deg, rgba(78,189,254,1) 0%, rgba(55,144,217,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4ebdfe', endColorstr='#3790d9', GradientType=1 );
+	padding-top: 62px;
+	padding-bottom: 40px;
+}
+
+.wrapper{
+	display: flex;
+	justify-content: space-between;
+}
+
+.offer{
+	color: #fff;
+}
+
+.title{
+	padding-top: 140px;
+	font-size: 37px;
+	width: 565px;
+}
+
+.title span{
+	font-size: 59px;
+}
+
+.intro{
+	padding: 40px 0;
+	font-size: 16px;
+	width: 405px;
+}
+
+.btn{
+	font-family: Montserrat, sans-serif;
+	font-weight: 900;
+	text-decoration: none;
+	color: #2e2a1b;
+	background: #ffd429;
+	padding: 20px 25px;
+	transition: all 0.5s ease;
+	cursor: pointer;
+	border:0;
+}
+
+.btn:hover{
+	background: #e3bd26;
+}
+
+.learn{
+	padding-top: 100px;
+}
+
+.learn_title{
+	text-align: center;
+}
+
+.items{
+	padding-top: 70px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.item{
+	width: 320px;
+}
+
+.icon{
+	margin: 0 auto;
+	display: block;
+	height: 70px;
+	opacity: 0;
+}
+
+.items_title{
+	padding-top: 30px;
+}
+
+.items_title, .items_intro{
+	text-align: center;
+}
+
+.ticket-form{
+	margin-top: 100px;
+	background: #ecf3f8;
+}
+
+h4{
+	padding-top: 100px;
+}
+
+.content{
+	text-align: center;
+}
+
+.form {
+	margin-top: 54px;
+	display: flex;
+	flex-flow: column;
+	align-items: center 
+}
+
+.input{
+	font-family: Ubuntu, sans-serif;
+	font-weight: 400;
+	border: 1px solid #bfb8d1;
+	color: #85828c;
+	width: 343px;
+	height: 47px;
+	margin-bottom: 15px;
+	border-radius: 3px;
+	padding-left: 25px;
+	opacity: 0;
+}
+
+.btn-form{
+	width: 343px;
+	border: 0;
+	margin-bottom: 100px;
+	cursor: pointer;
+}
+
+.footer{
+	background: #164d7a;
+}
+
+h5{
+	text-align: center;
+	color: #fff;
+	padding: 50px 0px;
+	font-weight: 400;
+}
+
+@media screen and (max-width: 1200px){
+	.container{
+		width: 960px;
+	}
+
+	.wrapper{
+		flex-direction: column;
+	}
+
+	.desktop{
+		margin-top: 30px;
+		width: 641px;
+		margin: 0 auto;
+	}
+
+	.logo{
+		display: block;
+		margin: 0 auto;
+	}
+
+	.offer{
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	.intro{
+		margin: 0 auto;
+	}
+
+	.items{
+		justify-content: center;
+	}
+
+	.item{
+		width: 250px;
+	}
+}
+
+@media screen and (max-width: 992px){
+	.container{
+		width: 720px;
+	}
+
+	.items{
+		flex-direction: column;: 
+	}
+
+	.item{
+		width: 100%;
+		margin-top: 10px;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.container{
+		width: 540px;
+	}
+	
+	.title{
+		width: 100%;
+	}
+
+	.desktop{
+		width: 500px;
+		height: 500px;
+	}
+}
+
+@media screen and (max-width: 576px){
+	.container{
+		width: 90%;
+	}
+
+	.desktop{
+		width: 90%;
+	    height: 90%;
+	    /*margin: inherit;*/
+	    margin-top: 10px;
+	}
+
+	.offer{
+		margin-top: 
+		text-align: left;
+	}
+
+	.title{
+		width: 100%;
+		padding-top: 20px;
+	}
+
+	.intro{
+		width: 100%;
+	}
+
+	.learn{
+		padding-top: 35px;
+	}
+
+	.items{
+		padding-top: 10px;
+	}
+
+	.input{
+		width: 100%;
+	}
+
+	.btn-form{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.ticket-form{
+		margin-top: 0;
+	}
+
+	h4{
+		padding-top: 20px;
+	}
+
+	.form{
+		margin-top: 20px;
+	}
+
+	h5{
+		padding: 25px;
+	}
+}
